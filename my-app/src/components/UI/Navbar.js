@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Navbar.module.css";
 
-const MainHeader = () => {
+const MainHeader = (props) => {
     return (
         <header className={classes.header}>
             <nav>
