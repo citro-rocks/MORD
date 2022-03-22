@@ -1,0 +1,22 @@
+h1 {
+    color: #FF5A5A;
+    font-size: 130px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #FF5A5A;
+    font-size: 64px;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}

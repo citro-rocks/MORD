@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import {Route, Routes } from 'react-router-dom';
+
 import './App.css';
+import Welcome from './pages/Home/WelcomePage';
 
 function App() {
   return (
     <div>
-      <h2>Lets start!</h2>
+      <Routes>
+        <Route path='/' element={<Welcome />} />
+        <Route path='/start' />
+      </Routes>
     </div>
   );
 }
