@@ -5,7 +5,7 @@
     justify-content: flex-start;
 }
 
-.files {
+.text {
     background-color: #FF9494;
     border: 1px solid;
     border-radius: 5px;
@@ -14,11 +14,11 @@
     margin: 1rem;
 }
 
-.files img {
-    padding: 23%;
+.text img {
+    padding: 30% 40%;
 }
 
-.files p {
+.text p {
     color: aliceblue;
     font-style: italic;
     align-self: baseline;

@@ -5,7 +5,7 @@
     justify-content: flex-start;
 }
 
-.files {
+.rss {
     background-color: #FF9494;
     border: 1px solid;
     border-radius: 5px;
@@ -14,11 +14,11 @@
     margin: 1rem;
 }
 
-.files img {
-    padding: 23%;
+.rss img {
+    padding: 25% 30%;
 }
 
-.files p {
+.rss p {
     color: aliceblue;
     font-style: italic;
     align-self: baseline;

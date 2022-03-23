@@ -5,7 +5,7 @@
     justify-content: flex-start;
 }
 
-.files {
+.camera {
     background-color: #FF9494;
     border: 1px solid;
     border-radius: 5px;
@@ -14,11 +14,11 @@
     margin: 1rem;
 }
 
-.files img {
-    padding: 23%;
+.camera img {
+    padding: 25% 23%;
 }
 
-.files p {
+.camera p {
     color: aliceblue;
     font-style: italic;
     align-self: baseline;
