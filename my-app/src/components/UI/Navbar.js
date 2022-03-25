@@ -1,19 +1,24 @@
-import LoginModal from "./LoginModal"
+import React from "react";
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
+
+// import Authentication from "../../pages/AuthPage/AuthPage";
+// import Router from 'react-router-dom'
 import { useState } from "react";
 
 import classes from "./Navbar.module.css";
 
 const MainHeader = (props) => {
-    const [openModal, setOpenModal] = useState(false)
+    const [openAuth, setOpenAuth] = useState(false);
+
     return (
         <header className={classes.header}>
             <nav>
                 <div className={classes.container}>
-                    <p className={classes.logo}>MORD</p>
+                    <NavLink className={classes.logo} to="/home">MORD</NavLink>
                 </div>
                 <div className={classes.container}>
-                    <button className={classes.button} onClick={() => {setOpenModal(true)}}>Log In</button>
-                    {openModal && <LoginModal closeModal={setOpenModal} />}
+                    <NavLink className={classes.button} to="/login">Login</NavLink>
+                    {/* <button className={classes.button} onClick={() => {setOpenAuth(true)}}>Log In</button> */}
                 </div>
             </nav>
         </header>

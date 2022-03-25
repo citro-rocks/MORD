@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import MainHeader from "../../components/UI/Navbar";
 import Time from "../../components/UI/TimeAndDate";
 
-import classes from './WelcomePage.module.css';
+import classes from './Home.module.css';
 
 const Welcome = (props) => {
     return (

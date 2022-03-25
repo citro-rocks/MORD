@@ -5,3 +5,26 @@
     justify-content: center;
     padding-top: 5rem;
 }
+
+.container .searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.files {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.apps {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+}
