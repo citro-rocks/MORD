@@ -1,20 +1,17 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
 import classes from './Images.module.css';
 
-import ImageIcon from '../../assets/image-icon.png'
-import ImageViewer from "./ImageViewerModal";
 
-const Images = (props) => {
+const Images = ({images}) => {
     return (
-        <div className={classes.container}>
-            <NavLink to="/ImageViewer"className={classes.images}>
-                <img src={ImageIcon} alt="" />
-                <div>
-                    <p>Image Viewer</p>
+        <div>
+            <h2>{Title}</h2>
+            {images.map((img) => (
+                <div key={img.id}>
+                    <h2>{ img.title }</h2>
                 </div>
-            </NavLink>
+            ))}
         </div>
     )
 }

@@ -4,11 +4,11 @@ import MainHeader from "../../components/UI/Navbar";
 import Search from "../../components/Search/Search";
 import Files from "../../components/Apps/Files";
 import RssFeed from "../../components/Apps/Rss";
+import ImageIcon from '../../components/assets/image-icon.png';
 
 import classes from './StartPage.module.css';
 import TextEditor from "../../components/Apps/Text";
 import WebCamera from "../../components/Apps/Camera";
-import Images from "../../components/Apps/ImageViewer/Images";
 
 
 const Start = (props) => {
@@ -36,7 +36,14 @@ const Start = (props) => {
                     <WebCamera />
                 </div>
                 <div>
-                    <Images />
+                    <div className={classes.box}>
+                        <NavLink to="/gallery" className={classes.images}>
+                            <img src={ImageIcon} alt="" />
+                            <div>
+                                <p>Image Viewer</p>
+                            </div>
+                        </NavLink>
+                    </div>
                 </div>
             </div>
         </div>

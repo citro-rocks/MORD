@@ -1,11 +1,13 @@
 import React from "react";
-import classes from './ImageViewerModal.module.css'
+import Gallery from "./gallery";
+import classes from './ImageViewer.module.css'
+
 
 const ImageViewer = (props) => {
     return (
         <div className={classes.modal}>
             {props.children}
-            <h1>Here goes some images</h1>
+            <Gallery />
         </div>
     )
         

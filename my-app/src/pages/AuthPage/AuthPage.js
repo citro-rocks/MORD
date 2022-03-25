@@ -5,7 +5,7 @@ import MainHeader from "../../components/UI/Navbar";
 import classes from './AuthPage.module.css';
 
 
-const Authentication = ({ Login, error }) => {
+const Authentication = ({ login, error }) => {
 
     // const history = useHistory() 
 
@@ -15,7 +15,7 @@ const Authentication = ({ Login, error }) => {
     const submitHandler = e => {
         e.preventDefault();
 
-        Login(details);
+        login(details);
 
     }
 
